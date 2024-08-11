@@ -4,6 +4,7 @@ and powered by [nwg-shell](https://github.com/nwg-piotr/nwg-shell).
 
 ## Components
 - [swaybg](https://github.com/swaywm/swaybg)
+- [swaylock](https://github.com/swaywm/swaylock)
 - [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 - [nwg-dock](https://github.com/nwg-piotr/nwg-dock)
 - [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)

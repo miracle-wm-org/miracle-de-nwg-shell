@@ -16,6 +16,15 @@ ninja -C build/
 sudo ninja -C build/ install
 cd ..
 
+echo "Building swaylock..."
+git clone https://github.com/swaywm/swaylock
+cd swaylock
+meson build
+ninja -C build
+sudo ninja -C build install
+sudo chmod a+s /usr/local/bin/swaylock  # If you don't have PAM
+cd ..
+
 echo "Building nwg-panel..."
 git clone https://github.com/nwg-piotr/nwg-panel.git
 git clone https://github.com/nwg-piotr/nwg-icon-picker
