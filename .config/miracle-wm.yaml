@@ -1,5 +1,3 @@
-action_key: meta
-
 inner_gaps:
   x: 10
   y: 10
@@ -34,7 +32,7 @@ startup_apps:
     restart_on_death: true
   - command: swaybg -i /home/matthew/Pictures/surfing.jpg
     restart_on_death: true
-  - command: nwg-dock -p left
+  - command: nwg-dock -p left -f -x
     restart_on_death: true
 
 environment_variables:

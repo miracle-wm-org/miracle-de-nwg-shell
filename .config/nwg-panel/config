@@ -2,7 +2,7 @@
   {
     "name": "panel-top",
     "output": "",
-    "layer": "bottom",
+    "layer": "overlay",
     "position": "top",
     "controls": "right",
     "width": "auto",
@@ -17,13 +17,13 @@
     "icons": "light",
     "css-name": "panel-top",
     "modules-left": [
-      "button-sample",
-      "playerctl"
+      "sway-workspaces"
     ],
     "modules-center": [
       "clock"
     ],
     "modules-right": [
+      "executor-weather",
       "sway-mode"
     ],
     "controls-settings": {
@@ -109,7 +109,9 @@
         "5",
         "6",
         "7",
-        "8"
+        "8",
+        "9",
+        "0"
       ]
     },
     "clock": {
@@ -131,14 +133,6 @@
       "button-css-name": "",
       "label-css-name": "",
       "interval": 1
-    },
-    "button-sample": {
-      "command": "notify-send 'sample button'",
-      "icon": "view-grid",
-      "label": "",
-      "label-position": "right",
-      "css-name": "button-custom",
-      "icon-size": 16
     },
     "menu-start": "off",
     "exclusive-zone": true,
@@ -150,116 +144,7 @@
     "brightness-slider": {},
     "dwl-tags": {},
     "hyprland-taskbar": {},
-    "hyprland-workspaces": {}
-  },
-  {
-    "name": "panel-bottom",
-    "output": "",
-    "layer": "bottom",
-    "position": "bottom",
-    "controls": "off",
-    "width": "auto",
-    "height": 30,
-    "margin-top": 0,
-    "margin-bottom": 0,
-    "padding-horizontal": 6,
-    "padding-vertical": 0,
-    "spacing": 0,
-    "items-padding": 0,
-    "icons": "",
-    "css-name": "panel-bottom",
-    "modules-left": [
-      "sway-taskbar"
-    ],
-    "modules-center": [],
-    "modules-right": [
-      "executor-weather"
-    ],
-    "controls-settings": {
-      "components": [
-        "brightness",
-        "volume",
-        "battery"
-      ],
-      "commands": {
-        "battery": ""
-      },
-      "show-values": false,
-      "interval": 1,
-      "icon-size": 16,
-      "hover-opens": false,
-      "leave-closes": true,
-      "click-closes": false,
-      "css-name": "controls-window",
-      "custom-items": [
-        {
-          "name": "Panel settings",
-          "icon": "nwg-panel",
-          "cmd": "nwg-panel-config"
-        }
-      ],
-      "menu": {
-        "name": "unnamed",
-        "icon": "",
-        "items": []
-      }
-    },
-    "sway-taskbar": {
-      "workspace-menu": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "name-max-len": 20,
-      "image-size": 16,
-      "workspaces-spacing": 0,
-      "task-padding": 0,
-      "show-app-icon": true,
-      "show-app-name": true,
-      "show-layout": true,
-      "workspace-buttons": false,
-      "all-workspaces": true,
-      "mark-autotiling": true,
-      "mark-xwayland": true,
-      "all-outputs": false
-    },
-    "sway-workspaces": {
-      "numbers": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8"
-      ]
-    },
-    "clock": {
-      "format": "%a, %d. %b  %H:%M:%S",
-      "tooltip-text": "",
-      "on-left-click": "",
-      "on-middle-click": "",
-      "on-right-click": "",
-      "on-scroll-up": "",
-      "on-scroll-down": "",
-      "css-name": "clock",
-      "interval": 1
-    },
-    "playerctl": {
-      "buttons-position": "left",
-      "icon-size": 16,
-      "chars": 30,
-      "scroll": false,
-      "button-css-name": "",
-      "label-css-name": "",
-      "interval": 1
-    },
+    "hyprland-workspaces": {},
     "executor-weather": {
       "script": "curl https://wttr.in/?format=1 -s",
       "interval": 1800,
