@@ -34,7 +34,7 @@ startup_apps:
     restart_on_death: true
   - command: swaybg -i /home/matthew/Pictures/surfing.jpg
     restart_on_death: true
-  - command: nwg-dock
+  - command: nwg-dock -p left
     restart_on_death: true
 
 environment_variables:
